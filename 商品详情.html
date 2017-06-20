@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Jc">
+    <title>商品详情</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/商品详情.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="back"><img src="./images/返回.png" alt=""></div>
+        <div id="share" class="share"><img src="./images/分享.png" alt=""></div>
+    </div>
+    <!--跑马灯-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href=""><img src="./images/商品详情.png" alt="..."></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="./images/商品详情.png" alt="..."></a>
+            </div>
+        </div>
+    </div>
+    <!--商品介绍-->
+
+
+    <!--底部-->
+    <div class="buybar">
+        <a href="">
+             <img src="./images/home.png" alt="">
+            <div>首页</div>
+        </a><a href="">
+            <img src="./images/购物车.png" alt="">
+            <div>购物车</div>
+        </a>
+        <div class="addtocar">加入购物车</div>
+        <div class="buynow">立即购买</div>
+    </div>
+    <!--点击购买跳出的弹窗-->
+    <!--首先要有个黑影效果-->
+    <div class="mask"></div>
+    <!--购买弹窗-->
+    <div class="buywindow">
+        <img class="close" src="./images/close.png" alt="">
+        <div class="info">
+            <div class="info_img"><img src="./images/buy1.jpg" alt=""></div>
+            <div>
+                <div class="price">￥2799</div>
+                <div class="kind">小米电视4A 55英寸 黑色</div>
+            </div>
+        </div>
+    </div>
+    <div class="btn_confirm">
+        确定
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.close').click(function () {
+            $(".buywindow").css('height', '0vw');
+            setTimeout(function () {
+                $('.buywindow').css('display', 'none')
+            }, 200);
+            $('.mask').css('display', 'none');
+            setTimeout(function () {
+                $('.btn_confirm').css('display', 'none');
+
+            }, 200);
+
+
+        });
+        $('.buynow').click(function () {
+            $('.buywindow').css('display', 'block')
+            setTimeout(function () {
+                $(".buywindow").css('height', '105vw');
+            }, 0);
+            $('.mask').css('display', 'block');
+            $('.btn_confirm').css('display', 'block');
+        });
+    </script>
+</body>
+
+</html>

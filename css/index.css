@@ -1,0 +1,258 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+            font-size: 3vw;
+            box-sizing: border-box;
+        }
+        .clearfix{
+            clear: both;
+        }
+        header {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        
+        nav{
+            width: 100%;
+        }
+        header div {
+            float: left;
+        }
+
+        .search_bar {
+            background-color: white;
+            color: gray;
+            border-radius: 3px;
+            width: 75vw;
+            height: 7vw;
+            background-image: url(../images/search.png);
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            background-position: 10px;
+        }
+
+        .search_bar>a {
+            margin-left: 35px;
+            color: gray;
+            margin-bottom: 20px;
+            line-height: 7vw;
+        }
+
+
+
+
+        .logo img {
+            width: 11vw;
+            height: 7vw;
+            padding-right: 2vw;
+            padding-left: 2vw;
+            line-height: 4vw;
+        }
+
+        .login a {
+            line-height: 7vw;
+            float: none;
+            color: white;
+            padding: 4vw;
+        }
+
+        #carousel-example-generic {
+            height: 30%;;
+        }
+
+        .carousel-indicators {
+            margin-left: 35vw;
+        }
+        .carousel-indicators li{
+            width: 2vw!important;
+            height: 2vw!important;
+        }
+        .earlynews {
+            width: 100%;
+            background-image: url(../images/earlynews.png);
+            background-repeat: no-repeat;
+            background-size: 100px 46px;
+            background-color: white;
+            padding: 13px;
+            height: 50px;
+            font-size: 3vw;
+        }
+
+        .earlynews div {
+            padding-left: 10px;
+            margin-left: 100px;
+            border-left: 2px solid lightgray;
+            font-weight: 900;
+        }
+
+        a {
+            color: black;
+        }
+
+        .line {
+            width: 100%;
+            height: 10px;
+            background-color: transparent;
+            clear: both;
+        }
+
+        .mid img {
+            width: 100%;
+        }
+
+        .threepic img {
+            width: 50%;
+            float: left;
+        }
+
+        .threepic img:nth-child(1) {
+            border-right: 3px solid white;
+            box-sizing: border-box;
+            height: 71vw;
+        }
+
+        .threepic img:nth-child(2) {
+            border-bottom: 3px solid white;
+            box-sizing: border-box;
+        }
+
+        .tag{
+            height: 5vw;
+            width: 16vw;
+            position: absolute;
+            left: 0.3vw;
+            margin-top: 0.3vw;
+        }
+
+        
+
+        .item_pic {
+            width: 100%;
+            border: 2px solid white;
+            height: 50vw;
+            float:left;
+        }
+        
+        .item_list>div {
+            width: 50%;
+            float: left;
+            display: block;
+        }
+
+       
+        
+
+        main {
+            width: 512px;
+            height: 80%;
+            margin: 0 auto;
+        }
+
+        .info {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .brief {
+            font-size: 0.6em;
+            color: gray;
+        }
+
+        .price {
+            color: red;
+        }
+
+        .price::before {
+            content: "￥";
+        }
+
+        .price span {
+            font-size: 0.2em;
+        }
+        footer{
+            width: 100%;
+            height: 13vw;
+            background-color: white;;
+            clear: both;
+            position: fixed;
+            bottom: 0;
+            padding-top: 2vw;
+            border-top: 1px solid lightgray;
+        }
+        footer ul li{
+            float: left;
+            width: 25vw;
+            box-sizing: border-box;
+            height: 13vw;
+            background-color: white;
+            text-align: center;
+        }
+        footer ul li div{
+            height: 6vw;
+            width: 100%;
+            margin-left: 8.5vw;
+            background-image: url(../images/sprite.png);
+            background-repeat: no-repeat;
+            background-size: 6vw;
+        }
+        footer ul{
+            
+            list-style: none;
+        }
+        .home_click{       
+            background-position: 1vw -36vw;
+        }
+        .home_img{       
+            background-position: 1vw -42vw;
+        }
+        .classify_img{
+            background-position: 1vw -6vw;
+        }
+        .classify_click{
+            background-position: 1vw 0vw;
+        }
+        .shopcar_img{
+            background-position: 1vw -17.7vw;
+        }
+        .shopcar_click{
+            background-position: 1vw -12vw;
+        }
+        .mine_img{
+            background-position: 1vw -30vw;
+        }
+        .mine_click{
+            background-position: 1vw -24vw;
+        }
+       .carousel-indicators{
+           width: 15vw!important;
+       }
+       .daohang{
+           height: 92%;
+       }
+        @media screen and (max-width: 410px)  {
+            .search_bar {
+            background-color: white;
+            color: gray;
+            border-radius: 3px;
+            width: 71vw;
+            height: 7vw;
+            background-image: url(../images/search.png);
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            background-position: 10px;
+         }
+        }
+        

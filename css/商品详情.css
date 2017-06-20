@@ -1,0 +1,140 @@
+.header{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 12vw;
+    width: 100%;
+    padding: 4vw;
+}
+.share {
+    height: 7vw;
+    width: 7vw;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.share img{
+    height: 4vw;
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+}
+#back img{
+    height: 5vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+#back{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 7vw;
+    width: 7vw;
+    float: left;
+    border-radius: 50%;
+
+}
+.buybar{
+    width: 100%;
+    height: 14vw;
+    border-top: 1px solid lightgray;
+    position: fixed;
+    bottom: 0;
+}
+.buybar a{
+    float: left;
+    width: 20vw;
+    text-align: center;
+    color: black;
+    border-right: 1px solid lightgrey;
+    padding-top: 2vw;
+    font-weight: 300;
+}
+.buybar a img{
+    width: 35%;
+}
+.addtocar,.buynow{
+    float: left;
+    width: 30vw;
+    height: 100%;
+    background-color: orange;
+    line-height: 14vw;
+    text-align: center;
+    color: white;
+    font-size: 4.5vw;
+}
+.buynow{
+    background-color:rgb(246, 90, 7);
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.buywindow{
+    position: absolute;
+    bottom: 0vw;
+    left: 0;
+    right: 0;   
+    height: 0vw;
+    padding: 5vw;    
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    z-index: 9993;
+    transition-property: height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;    /*height: 0px;*/
+}
+.show{
+    height: 105vw;
+}
+.hide{
+    height: 0;
+}
+.close {
+    height: 5vw;
+}
+.info{
+    padding-bottom: 8vw;
+    border-bottom: 1px solid lightgrey;
+}
+.info_img{
+    width: 28.5vw;
+    height: 28.5vw;
+    border: 1px solid lightgrey;
+    text-align: center;
+    float: left;
+    margin-right: 2vw;
+    margin-top: -13vw;
+    background-color: white;
+}
+.info_img img{
+    line-height: 30vw;
+    width:100%;
+    margin-top: 5vw;
+    
+}
+.price{
+    color: rgb(246, 90, 7);
+    font-size: 6vw;
+}
+.kind{
+    font-size: 4vw;
+}
+.btn_confirm{
+    background-color: rgb(246, 90, 7);
+    width: 100%;
+    height: 13vw;
+    color: white;
+    font-size: 4.5vw;
+    line-height: 13vw;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    z-index: 10000;
+}

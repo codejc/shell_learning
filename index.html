@@ -1,125 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="Jc">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <style>
-        section>div {
-            float: left;
-            width: 30px;
-            height: 25px;
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
         }
 
-        section {
-            width: 210px;
+        iframe {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
-    <h1>2017年6月5号</h1>
-    <section>
-        <div>日</div>
-        <div>一</div>
-        <div>二</div>
-        <div>三</div>
-        <div>四</div>
-        <div>五</div>
-        <div>六</div>
-    </section>
-
-    <button id="previous">previous</button>
-    <button id="next">next</button>
+    <iframe class="daohang" src="首页.html" frameborder="0"></iframe>
+    <div class="gotop">
+        
+    </div>
+    <div class="clearfix" style="width:100%;height:13vw"></div>
+    <footer>
+        <ul>
+            <li>
+                <a href="#" class="home isclicked" style="color:orange">
+                    <div class="home_click"></div>首页</a>
+            </li>
+            <li>
+                <a href="#" class="classify">
+                    <div class="classify_img"></div>分类</a>
+            </li>
+            <li>
+                <a href="#" class="shopcar">
+                    <div class="shopcar_img"></div>购物车</a>
+            </li>
+            <li>
+                <a href="#" class="mine">
+                    <div class="mine_img"></div>我的</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
-        var date = new Date();
-        var count = date.getMonth();
-        var previous = document.getElementById('previous')
-        var next = document.getElementById('next')
-        var title = document.querySelector('h1')
-        previous.onclick = function () {
-            count--;
-            date.setMonth(count);
-            change();
-            console.log(date);
-        }
-        next.onclick = function () {
-            count++;
-            date.setMonth(count);
-            change();
-            console.log(date);
-
-        }
-        function show() {
-            var sec = document.createElement('section');
-            sec.id = 'new'
-            document.body.appendChild(sec);
-            date.setDate(1);
-            var week = date.getDay()
-            console.log(week)
-            for (var i = 0; i < week; i++) {
-                var newDay = document.createElement('div')
-                sec.appendChild(newDay)
-            }
-            for (var i = 0; i < 30; i++) {
-                var newDay = document.createElement('div')
-                newDay.innerText = i + 1;
-                sec.appendChild(newDay)
-            }
-            title.innerText = date.getFullYear() + '年' + (date.getMonth()+1);
-        }
-        show();
-        function change() {
-            title.innerText = date.getFullYear() + '年' + (date.getMonth()+1);
-            document.getElementById('new').remove();
-            var sec = document.createElement('section');
-            sec.id = 'new'
-            document.body.appendChild(sec);
-            date.setDate(1);
-            var week = date.getDay()
-            console.log(week)
-            for (var i = 0; i < week; i++) {
-                var newDay = document.createElement('div')
-                sec.appendChild(newDay)
-            }
-
-            switch (date.getMonth() + 1) {
-                case 1:
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12:
-                    for (var i = 0; i < 31; i++) {
-                        var newDay = document.createElement('div')
-                        newDay.innerText = i + 1;
-                        sec.appendChild(newDay)
-                    }
-                    break;
-                case 2:
-                    for (var i = 0; i < 29; i++) {
-                        var newDay = document.createElement('div')
-                        newDay.innerText = i + 1;
-                        sec.appendChild(newDay)
-                    }
-                    break;
-                case 4:
-                case 6:
-                case 9:
-                case 11:
-                    for (var i = 0; i < 30; i++) {
-                        var newDay = document.createElement('div')
-                        newDay.innerText = i + 1;
-                        sec.appendChild(newDay)
-                    }
-                    break;
-
-            }
-        }
-        console.log(date)
+        
     </script>
 </body>
 
